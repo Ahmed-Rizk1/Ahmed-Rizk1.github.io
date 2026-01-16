@@ -47,7 +47,7 @@ function typeWriter() {
 document.addEventListener('DOMContentLoaded', () => {
     typeWriter();
 
-    // Scroll Reveal Animation
+    // Scroll Reveal Animation (General sections)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -57,7 +57,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.querySelectorAll('.section').forEach((section) => {
-        section.classList.add('fade-in'); // Add base class
+        section.classList.add('fade-in'); 
         observer.observe(section);
+    });
+
+    // Timeline Items Scroll Reveal
+    const timelineObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                // Add a small delay based on index relative to current view could be complex, 
+                // but just adding the class works with CSS opacity transition.
+                // To get the "one by one" effect, we can rely on standard CSS transition or add a delay.
+                // Since they are stacked vertically, natural scroll does one by one. 
+                // But if multiple are in view, we might want to stagger them.
+                setTimeout(() => {
+                    entry.target.classList.add('active');
+                }, index * 100); 
+                timelineObserver.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, {
+        threshold: 0.2, // Trigger when 20% of item is visible
+        rootMargin: "0px" 
+    });
+
+    document.querySelectorAll('.timeline-item').forEach((item) => {
+        timelineObserver.observe(item);
     });
 });
