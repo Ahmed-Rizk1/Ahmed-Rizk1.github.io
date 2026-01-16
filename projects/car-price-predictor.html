@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Predictor | Ahmed Rizk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">Ahmed Rizk.</div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact" class="btn btn-primary">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <a href="../index.html#projects" class="project-back-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            
+            <div class="project-header" style="margin-bottom: 3rem;">
+                <h1>Car Price Predictor</h1>
+                <div class="project-tags">
+                    <span class="project-tag">Machine Learning</span>
+                    <span class="project-tag">Streamlit</span>
+                    <span class="project-tag">Regression</span>
+                </div>
+            </div>
+
+            <div class="project-details" style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem;">
+                <div class="left-col">
+                    <h2>Project Overview</h2>
+                    <p class="mb-4">
+                        An interactive web application helping users estimate the market value of used cars. This project demonstrates the full lifecycle of an ML project from data cleaning and exploratory data analysis (EDA) to model training and deployment.
+                    </p>
+
+                    <h3>Key Features</h3>
+                    <ul class="mb-4" style="list-style: disc; padding-left: 1.5rem;">
+                        <li class="mb-1">Interactive User Interface built with Streamlit.</li>
+                        <li class="mb-1">Real-time prediction based on user inputs (Year, Brand, Mileage, etc.).</li>
+                        <li class="mb-1">Comparison of multiple regression models (Lasso, Ridge, Random Forest).</li>
+                        <li class="mb-1">Production-ready code structure with proper configuration management.</li>
+                    </ul>
+
+                    <h3>Methodology</h3>
+                    <p class="mb-4">
+                        The dataset underwent rigorous cleaning to handle missing values and outliers. I utilized feature encoding for categorical variables. The application uses a saved model pipeline to perform inference on new data points provided by the user interface.
+                    </p>
+                    
+                </div>
+
+                <div class="right-col">
+                    <div class="project-sidebar" style="background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color);">
+                        <h3 class="mb-4">Technology Stack</h3>
+                        <div class="skill-tags mb-4">
+                            <span class="skill-tag">Streamlit</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Joblib</span>
+                        </div>
+
+                        <h3 class="mb-4">Links</h3>
+                        <a href="https://github.com/Ahmed-Rizk1/car_price_predictor" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; margin-bottom: 1rem;"><i class="fab fa-github"></i> View Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: var(--secondary-color); padding: 2rem 0; text-align: center; margin-top: 4rem;">
+        <div class="container">
+            <p>&copy; 2026 Ahmed Rizk Gawish</p>
+        </div>
+    </footer>
+</body>
+</html>

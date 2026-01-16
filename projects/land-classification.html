@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Classification (EuroSAT) | Ahmed Rizk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">Ahmed Rizk.</div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact" class="btn btn-primary">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <a href="../index.html#projects" class="project-back-link mb-2" style="display: inline-block; color: var(--accent-color); font-weight: 500;"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            
+            <div class="project-header mb-4">
+                <h1>Land Classification (EuroSAT)</h1>
+                <div class="project-tags">
+                    <span class="project-tag">Computer Vision</span>
+                    <span class="project-tag">Deep Learning</span>
+                    <span class="project-tag">TensorFlow</span>
+                </div>
+            </div>
+
+            <div class="project-details" style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem;">
+                <div class="left-col">
+                    <div class="glass-card mb-4">
+                        <h2>Project Overview</h2>
+                        <p class="mb-4">
+                            This project targets environmental monitoring by automating the classification of land use from satellite imagery. Using the EuroSAT dataset and Sentinel-2 satellite images, I developed a robust deep learning pipeline capable of distinguishing between 10 different land-use types (e.g., Forest, Highway, Industrial).
+                        </p>
+
+                        <h3>Key Features</h3>
+                        <ul class="mb-4" style="list-style: disc; padding-left: 1.5rem;">
+                            <li class="mb-1">Custom CNN architecture optimized for satellite imagery.</li>
+                            <li class="mb-1">Data augmentation pipeline to handle class imbalance and improve generalization.</li>
+                            <li class="mb-1">Comparitive analysis with Transfer Learning (ResNet50, VGG16).</li>
+                            <li class="mb-1">Achieved 94% accuracy on held-out test set.</li>
+                        </ul>
+
+                        <h3>Methodology</h3>
+                        <p>
+                            The core challenge was extracting features from lower-resolution satellite data. I employed deep Convolutional Neural Networks (CNNs) and experimented with state-of-the-art architectures. Preprocessing involved normalization and specific augmentations (rotation, flip) relevant to aerial views.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="right-col">
+                    <div class="glass-card">
+                        <h3 class="mb-4 text-accent">Technology Stack</h3>
+                        <div class="skill-tags mb-4">
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Keras</span>
+                            <span class="skill-tag">OpenCV</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+
+                        <h3 class="mb-4 text-accent">Links</h3>
+                        <a href="https://github.com/Ahmed-Rizk1/Land-Type-Classification-using-Sentinel-2-Satellite-Images" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center; margin-bottom: 1rem;"><i class="fab fa-github"></i> View Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: var(--secondary-color); padding: 2rem 0; text-align: center; margin-top: 4rem;">
+        <div class="container">
+            <p>&copy; 2026 Ahmed Rizk Gawish</p>
+        </div>
+    </footer>
+</body>
+</html>

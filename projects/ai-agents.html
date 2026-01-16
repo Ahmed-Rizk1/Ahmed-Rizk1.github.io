@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agents for Product Search | Ahmed Rizk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">Ahmed Rizk.</div>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#contact" class="btn btn-primary">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <a href="../index.html#projects" class="project-back-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+            
+            <div class="project-header" style="margin-bottom: 3rem;">
+                <h1>AI Agents for Product Search</h1>
+                <div class="project-tags">
+                    <span class="project-tag">Generative AI</span>
+                    <span class="project-tag">Multi-Agent Systems</span>
+                    <span class="project-tag">CrewAI</span>
+                    <span class="project-tag">GPT-4o</span>
+                </div>
+            </div>
+
+            <div class="project-details" style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem;">
+                <div class="left-col">
+                    <h2>Project Overview</h2>
+                    <p class="mb-4">
+                        This project implements a sophisticated Multi-Agent AI system designed to automate product research across multiple e-commerce and information platforms. By leveraging CrewAI and GPT-4o, the system orchestrates specialized agents to search, analyze, and summarize product data, significantly reducing manual research time.
+                    </p>
+
+                    <h3>Key Features</h3>
+                    <ul class="mb-4" style="list-style: disc; padding-left: 1.5rem;">
+                        <li class="mb-1">Automated search across 10+ different platforms simultaneously.</li>
+                        <li class="mb-1">Intelligent data synthesis and summarization.</li>
+                        <li class="mb-1">Handling of complex queries (5,000+ daily).</li>
+                        <li class="mb-1">Scalable agent architecture using CrewAI.</li>
+                    </ul>
+
+                    <h3>Methodology</h3>
+                    <p class="mb-4">
+                        The system uses a manager-worker agent architecture. A "Manager Agent" breaks down the user query into sub-tasks (e.g., "Find price", "Find specs", "Find reviews"). Specialized "Worker Agents" then execute these tasks using search tools. The results are aggregated and synthesized into a final report by a "Writer Agent".
+                    </p>
+                    
+                    <h3>Results</h3>
+                    <p>
+                        The implementation reduced manual research effort by approximately <strong>80%</strong> and demonstrated high stability, handling over 5,000 daily queries with minimal latency.
+                    </p>
+                </div>
+
+                <div class="right-col">
+                    <div class="project-sidebar" style="background: var(--card-bg); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color);">
+                        <h3 class="mb-4">Technology Stack</h3>
+                        <div class="skill-tags mb-4">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">CrewAI</span>
+                            <span class="skill-tag">LangChain</span>
+                            <span class="skill-tag">OpenAI API</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+
+                        <h3 class="mb-4">Links</h3>
+                        <a href="https://github.com/Ahmed-Rizk1" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; margin-bottom: 1rem;"><i class="fab fa-github"></i> View Source</a>
+                        <a href="#" class="btn btn-outline" style="width: 100%; text-align: center; opacity: 0.5; cursor: not-allowed;"><i class="fas fa-external-link-alt"></i> Live Demo (Offline)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: var(--secondary-color); padding: 2rem 0; text-align: center; margin-top: 4rem;">
+        <div class="container">
+            <p>&copy; 2026 Ahmed Rizk Gawish</p>
+        </div>
+    </footer>
+</body>
+</html>
